@@ -1,0 +1,339 @@
+%!TEX program = xelatex
+% =========================================================
+% MD SAIDUR RAHMAN BHUYAN — RESUME
+% Modern, single-column, ATS-optimized template
+% Compile with: XeLaTeX  (Overleaf: Menu → Compiler → XeLaTeX)
+% =========================================================
+
+\documentclass[10pt,a4paper]{article}
+
+% =========================================================
+% PACKAGES
+% =========================================================
+
+\usepackage[
+    top=0.55in,
+    bottom=0.55in,
+    left=0.62in,
+    right=0.62in
+]{geometry}
+
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+
+% =========================================================
+% FONT  (Carlito — Calibri-metric-compatible: clean, modern,
+% and one of the fonts ATS parsers handle most reliably)
+% =========================================================
+
+\setmainfont{Carlito}
+
+% =========================================================
+% COLORS
+% =========================================================
+
+\definecolor{primary}{HTML}{15304D}   % deep navy — headings
+\definecolor{secondary}{HTML}{4B5563} % slate gray — subheadings
+\definecolor{muted}{HTML}{6B7280}     % lighter gray — meta text
+\definecolor{rule}{HTML}{C9CED4}      % hairline rule gray
+
+% =========================================================
+% HYPERLINKS
+% =========================================================
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=primary,
+    linkcolor=primary,
+    pdfborder={0 0 0},
+    pdftitle={MD Saidur Rahman Bhuyan - Resume},
+    pdfauthor={MD Saidur Rahman Bhuyan}
+}
+
+% =========================================================
+% PAGE
+% =========================================================
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.03}
+\clubpenalty=10000
+\widowpenalty=10000
+
+% =========================================================
+% SECTION STYLE
+% =========================================================
+
+\titleformat{\section}
+    {\fontsize{11.5}{13}\selectfont\bfseries\color{primary}}
+    {}
+    {0pt}
+    {\MakeUppercase}
+    [\vspace{-5pt}{\color{rule}\titlerule[0.9pt]}]
+
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+
+% =========================================================
+% LIST STYLE
+% =========================================================
+
+\setlist[itemize]{
+    leftmargin=14pt,
+    itemsep=1.3pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+
+% =========================================================
+% CUSTOM COMMANDS
+% =========================================================
+
+% Experience / Education entry: title left, dates right / subtitle left, location right
+\newcommand{\experienceHeader}[4]{%
+    \begin{tabularx}{\textwidth}{@{}X r@{}}
+        \textbf{\large #1} & \textbf{\small\color{secondary}#2} \\
+        \textit{\color{secondary}#3} & \textit{\small\color{muted}#4}
+    \end{tabularx}
+}
+
+% Project entry: name left, tech stack / tags right
+\newcommand{\projectHeader}[2]{%
+    \vspace{2pt}
+    \begin{tabularx}{\textwidth}{@{}X r@{}}
+        \textbf{#1} & {\small\itshape\color{secondary}#2}
+    \end{tabularx}
+    \vspace{0.5pt}
+}
+
+\newcommand{\bulletItem}[1]{\item \small #1}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+
+\begin{document}
+
+% =========================================================
+% HEADER
+% =========================================================
+
+\begin{center}
+{\fontsize{23}{26}\selectfont\bfseries\color{primary}\addfontfeature{LetterSpace=1.5}MD SAIDUR RAHMAN BHUYAN}
+
+\vspace{4pt}
+
+{\fontsize{11.5}{14}\selectfont\bfseries\color{secondary}\addfontfeature{LetterSpace=2.5}JUNIOR FLUTTER DEVELOPER}
+
+\vspace{6pt}
+
+{\small\color{secondary}
+Dhaka, Bangladesh \quad\textbullet\quad +880\,1795\,664122 \quad\textbullet\quad
+\href{mailto:saidurrahman.1004@gmail.com}{saidurrahman.1004@gmail.com}
+}
+
+\vspace{3pt}
+
+{\small
+\href{https://github.com/SaidurRahman1004}{\textbf{\color{primary}GitHub}~github.com/SaidurRahman1004}
+\quad\textbullet\quad
+\href{https://www.linkedin.com/in/saidur1004/}{\textbf{\color{primary}LinkedIn}~linkedin.com/in/saidur1004}
+\quad\textbullet\quad
+\href{https://saidurs-portfolio.web.app}{\textbf{\color{primary}Portfolio}~saidurs-portfolio.web.app}
+}
+\end{center}
+
+\vspace{6pt}
+{\color{primary}\rule{\textwidth}{1.1pt}}
+\vspace{2pt}
+
+% =========================================================
+% PROFESSIONAL SUMMARY
+% =========================================================
+
+\section{Professional Summary}
+
+\small
+Junior Flutter Developer with 6 months of professional experience building
+cross-platform mobile applications using Flutter and Dart. Experienced in REST
+API integration, Firebase, state management, local databases, responsive UI,
+and clean architecture. Hands-on experience contributing to production
+applications, including a live iOS application, alongside personal projects
+involving Flutter, Django REST Framework, and AI API integration. Strong interest
+in building maintainable mobile applications and continuously improving
+development, debugging, and software engineering practices.
+
+% =========================================================
+% PROFESSIONAL EXPERIENCE
+% =========================================================
+
+\section{Professional Experience}
+
+\experienceHeader
+{Betopia Group}
+{Mar 2026 -- Present}
+{Junior Flutter Developer}
+{Dhaka, Bangladesh}
+
+\vspace{3pt}
+
+\begin{itemize}
+    \bulletItem{Develop and maintain cross-platform mobile applications using Flutter and Dart in a professional development environment.}
+    \bulletItem{Work with REST APIs and backend services to integrate application features and manage data flows.}
+    \bulletItem{Implement responsive user interfaces, reusable Flutter components, and state management solutions for maintainable applications.}
+    \bulletItem{Work with Firebase and third-party services as required for application functionality and data handling.}
+    \bulletItem{Debug application issues, improve UI behavior, and support application stability throughout the development lifecycle.}
+    \bulletItem{Collaborate with team members to implement features, fix issues, and deliver application updates.}
+\end{itemize}
+
+% =========================================================
+% TECHNICAL SKILLS
+% =========================================================
+
+\section{Technical Skills}
+
+\small
+\begin{description}[
+    style=unboxed,
+    leftmargin=0pt,
+    labelindent=0pt,
+    font=\bfseries\color{primary},
+    itemsep=2.5pt,
+    topsep=1pt,
+    parsep=0pt
+]
+\item[Mobile Development] Flutter, Dart, Responsive UI, REST API Integration, JSON Parsing, Animations, Device APIs
+\item[State Management] Provider, Riverpod, GetX
+\item[Backend \& APIs] Django, Django REST Framework, REST APIs, JWT Authentication, WebSocket
+\item[Firebase] Authentication, Cloud Firestore, Cloud Messaging, Analytics, Crashlytics
+\item[Local Storage] SQLite, sqflite, Hive, SharedPreferences
+\item[Architecture \& Design] Clean Architecture, MVC, MVVM, Repository Pattern
+\item[Programming Languages] Dart, Python, Kotlin, JavaScript, C
+\item[Web Technologies] HTML5, CSS3, Bootstrap
+\item[Tools] Git, GitHub, Postman, Android Studio, Visual Studio Code
+\item[AI \& API Integration] Google Gemini API, Hugging Face APIs, AI Integration in Flutter
+\end{description}
+
+% =========================================================
+% SELECTED PROJECTS
+% =========================================================
+
+\section{Selected Projects}
+
+\projectHeader
+{EzyDash --- Student Marketplace}
+{Flutter \,\textbullet\, REST APIs \,\textbullet\, Production App \,\textbullet\, iOS}
+
+\begin{itemize}
+    \bulletItem{Contributed to the development and maintenance of a production-level student marketplace application built for student-focused services and community interactions.}
+    \bulletItem{Worked on Flutter-based mobile application features and user-facing functionality within a professional development environment.}
+    \bulletItem{Supported API-integrated application workflows, UI improvements, debugging, and application stability.}
+    \bulletItem{Live application available on the Apple App Store.}
+\end{itemize}
+
+\projectHeader
+{PocketVault --- Full-Stack Productivity App}
+{Flutter \,\textbullet\, Django REST Framework \,\textbullet\, JWT \,\textbullet\, SQLite \,\textbullet\, Provider}
+
+\begin{itemize}
+    \bulletItem{Built a multi-feature productivity application using Flutter and Django REST Framework.}
+    \bulletItem{Developed REST APIs with JWT authentication and user-specific data handling using Django ORM.}
+    \bulletItem{Implemented offline-first local storage using SQLite and integrated the Flutter frontend with the backend API.}
+    \bulletItem{Structured the application using clean architecture principles and Provider for state management.}
+\end{itemize}
+
+\projectHeader
+{Saidur's Portfolio Website}
+{Flutter Web \,\textbullet\, Firebase Auth \,\textbullet\, Firestore \,\textbullet\, MVVM \,\textbullet\, Provider}
+
+\begin{itemize}
+    \bulletItem{Built a responsive Flutter Web portfolio with a CMS-style admin dashboard for managing dynamic content.}
+    \bulletItem{Implemented Firebase Authentication for admin access and Cloud Firestore for real-time content management.}
+    \bulletItem{Structured the application using MVVM architecture with Provider for state management.}
+\end{itemize}
+
+\newpage
+
+
+
+\projectHeader
+{TravelSnap --- Travel Management App}
+{Flutter \,\textbullet\, Firebase \,\textbullet\, REST API \,\textbullet\, GPS \,\textbullet\, Geocoding \,\textbullet\, FCM}
+
+\begin{itemize}
+    \bulletItem{Developed a cross-platform travel application with authentication, real-time data, image uploads, and location-based functionality.}
+    \bulletItem{Integrated GPS, geocoding, REST APIs, Firebase Cloud Messaging, and Firebase services.}
+    \bulletItem{Implemented responsive interfaces and interactive application features using Flutter.}
+\end{itemize}
+
+\projectHeader
+{ChatPro --- Real-Time Chat Application}
+{Flutter \,\textbullet\, Firebase \,\textbullet\, GetX \,\textbullet\, Firestore \,\textbullet\, Clean Architecture}
+
+\begin{itemize}
+    \bulletItem{Built a real-time chat application with authentication and Firestore-based messaging.}
+    \bulletItem{Implemented a WhatsApp-inspired user interface with GetX state management and clean architecture principles.}
+\end{itemize}
+
+\projectHeader
+{Digital Shop --- Digital Product E-commerce App}
+{Flutter \,\textbullet\, Supabase \,\textbullet\, Riverpod \,\textbullet\, Dio \,\textbullet\, Repository Pattern}
+
+\begin{itemize}
+    \bulletItem{Ongoing project focused on building a digital product e-commerce application with a scalable Flutter architecture.}
+    \bulletItem{Currently developing the frontend and application UI with planned backend integration using Supabase and Dio.}
+\end{itemize}
+
+% =========================================================
+% EDUCATION
+% =========================================================
+
+\section{Education}
+
+\experienceHeader
+{Dhaka Polytechnic Institute}
+{2022 -- 2026}
+{Diploma in Computer Engineering --- Computer Science \& Technology}
+{Dhaka, Bangladesh}
+
+\vspace{7pt}
+
+\experienceHeader
+{Ali Ahmed School and College}
+{2021}
+{Secondary School Certificate (SSC) --- Science}
+{Bangladesh}
+
+% =========================================================
+% CERTIFICATIONS
+% =========================================================
+
+\section{Certifications \& Training}
+
+\begin{itemize}
+    \bulletItem{\textbf{Flutter \& Dart App Development} --- Ostad}
+    \bulletItem{\textbf{Web Development} --- Bohubrihi (Certified)}
+    \bulletItem{\textbf{Self-Learning:} Django, Django REST Framework, Python, Kotlin, JavaScript, AI API Integration}
+\end{itemize}
+
+% =========================================================
+% LANGUAGES
+% =========================================================
+
+\section{Languages}
+
+\small
+\textbf{Bengali:} Native
+\quad\textbullet\quad
+\textbf{English:} Intermediate
+\quad\textbullet\quad
+\textbf{Hindi:} Basic
+
+\end{document}
