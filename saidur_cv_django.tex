@@ -1,0 +1,257 @@
+% =============================================================
+% MD SAIDUR RAHMAN BHUYAN - PROFESSIONAL RESUME (FLUTTER & DJANGO)
+% Engine: XeLaTeX (path configured in .vscode/settings.json)
+% =============================================================
+
+\documentclass[10.5pt, a4paper]{article}
+
+% -- Core packages --------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[
+  top    = 0.48in,
+  bottom = 0.48in,
+  left   = 0.55in,
+  right  = 0.55in
+]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+% -- Global: no hyphenation (ATS requirement) -----------------
+\raggedright
+
+% -- Colors ---------------------------------------------------
+\definecolor{cnavy}{HTML}{1A3A5C}
+\definecolor{csteel}{HTML}{2563A6}
+\definecolor{crule}{HTML}{B0BAC5}
+\definecolor{cbody}{HTML}{2D2D2D}
+
+% -- Hyperref -------------------------------------------------
+\hypersetup{
+  colorlinks = true,
+  urlcolor   = csteel,
+  linkcolor  = csteel,
+  pdftitle   = {MD Saidur Rahman Bhuyan - Resume},
+  pdfauthor  = {MD Saidur Rahman Bhuyan}
+}
+
+% -- Page style -----------------------------------------------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\color{cbody}
+\clubpenalty  = 10000
+\widowpenalty = 10000
+
+% -- Section styling ------------------------------------------
+\newcommand{\secformat}[1]{\large\bfseries\color{cnavy}\MakeUppercase{#1}}
+\titleformat{\section}
+  {\large\bfseries\color{cnavy}}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\vspace{2pt}{\color{crule}\rule{\linewidth}{0.8pt}}\vspace{-4pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+% -- List styling ---------------------------------------------
+\setlist[itemize]{
+  leftmargin = 1.2em,
+  itemsep    = 1.5pt,
+  topsep     = 2pt,
+  parsep     = 0pt,
+  partopsep  = 0pt,
+  label      = \textbullet
+}
+
+% -- Custom commands ------------------------------------------
+
+% \expentry{Company}{Date}{Role}{Location}
+\newcommand{\expentry}[4]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{\large #1} & \textbf{\small\color{cnavy}#2} \\[1pt]
+    \textit{\color{csteel}#3} & \textit{\small\color{csteel}#4}
+  \end{tabularx}%
+}
+
+% \eduentry{Institution}{Date}{Degree}{Location}
+\newcommand{\eduentry}[4]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \textbf{\small\color{cnavy}#2} \\[1pt]
+    \textit{\small\color{csteel}#3} & \textit{\small\color{csteel}#4}
+  \end{tabularx}%
+}
+
+% \projentry{Name}{Tech Stack}
+\newcommand{\projentry}[2]{%
+  \vspace{3pt}%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & {\small\itshape\color{csteel}#2}
+  \end{tabularx}%
+  \vspace{1pt}%
+}
+
+% \skillrow{Category}{Items}
+\newcommand{\skillrow}[2]{%
+  {\textbf{\color{cnavy}#1:}}\enskip\small #2 \\[3pt]%
+}
+
+\newcommand{\sep}{\hspace{0.7em}{\color{crule}\textbullet}\hspace{0.7em}}
+
+% =============================================================
+\begin{document}
+% =============================================================
+
+% ---- HEADER -------------------------------------------------
+\begin{center}
+  {\Huge\bfseries\color{cnavy} MD Saidur Rahman Bhuyan}
+
+  \vspace{5pt}
+
+  {\Large\bfseries\color{csteel} JUNIOR FLUTTER \& DJANGO BACKEND DEVELOPER}
+
+  \vspace{10pt}
+
+  {\normalsize
+    Dhaka, Bangladesh
+    \sep
+    \href{https://wa.me/8801795664122}{+880 1795 664122}
+    \sep
+    \href{mailto:saidurrahman1004@gmail.com}{saidurrahman1004@gmail.com}
+  }
+
+  \vspace{5pt}
+
+  {\normalsize
+    \href{https://www.linkedin.com/in/saidur1004/}{linkedin.com/in/saidur1004}
+    \sep
+    \href{https://github.com/SaidurRahman1004}{github.com/SaidurRahman1004}
+    \sep
+    \href{https://saidurs-portfolio.web.app}{saidurs-portfolio.web.app}
+  }
+\end{center}
+
+\vspace{6pt}
+
+% ---- PROFESSIONAL SUMMARY -----------------------------------
+\section{Professional Summary}
+
+{\small
+Junior Flutter \& Django Backend Developer with 6+ months of professional experience developing production-ready mobile applications and building robust RESTful backend services. Proficient in Flutter, Dart, Python, Django, and Django REST Framework (DRF) with practical hands-on experience designing database models, CRUD APIs, JWT authentication, and full-stack integration. Highly skilled in leveraging modern AI-assisted engineering workflows to rapidly research, architect, and deliver scalable, maintainable solutions. Experienced in state management, app store publishing, and cross-functional team collaboration.
+}
+
+% ---- PROFESSIONAL EXPERIENCE --------------------------------
+\section{Professional Experience}
+
+\expentry{\href{https://smtech24.com/}{SM Technology} --- A \href{https://betopiagroup.com/}{Betopia Group} Company}{Mar 2026 -- Present}{Junior Flutter Developer}{Dhaka, Bangladesh}
+
+\vspace{4pt}
+
+\begin{itemize}
+  \item Developing and maintaining production mobile applications using Flutter and Dart, following structured and maintainable coding practices.
+  \item Working with REST APIs, Firebase, and backend services to integrate application features and manage data-driven workflows.
+  \item Handling Google Play Store and Apple App Store publishing, including release preparation, versioning, and deployment processes.
+  \item Gaining hands-on experience with in-app purchasing workflows and related application integration requirements.
+  \item Gaining practical experience with application deployment, cloud-based production environments, and release lifecycle management.
+  \item Collaborating within a professional team environment, including task coordination, feature planning, and cross-team communication.
+  \item Gaining exposure to client communication and project management workflows, including requirement gathering, progress tracking, and delivery coordination.
+\end{itemize}
+
+% ---- TECHNICAL SKILLS ---------------------------------------
+\section{Technical Skills}
+
+\vspace{2pt}
+\skillrow{Backend \& APIs}{Django, Django REST Framework, Python, RESTful API Development, JWT Authentication, WebSocket}
+\skillrow{Mobile Development}{Flutter, Dart, Responsive UI, REST API Integration, JSON Parsing, Animations, Device APIs}
+\skillrow{State Management}{Provider, Riverpod, GetX}
+\skillrow{Databases \& Storage}{PostgreSQL, SQLite, sqflite, Hive, SharedPreferences}
+\skillrow{Architecture \& Design}{Clean Architecture, MVVM, MVC, Repository Pattern, Full-Stack Integration}
+\skillrow{Firebase \& Cloud}{Firebase Authentication, Cloud Firestore, Firebase Cloud Messaging (FCM), Analytics, Crashlytics}
+\skillrow{Web Development}{JavaScript, HTML5, CSS3, Bootstrap}
+\skillrow{Deployment \& Monetization}{Google Play Store, Apple App Store, In-App Purchases, Google AdMob}
+\skillrow{Programming Languages}{Dart, Python, JavaScript, Kotlin, Java, Go \textit{(Basic)}, C \textit{(Basic)}}
+\skillrow{Tools \& AI}{Git, GitHub, Postman, Android Studio, VS Code, ChatGPT, Claude, AI-assisted development, Google Gemini API, Hugging Face APIs}
+
+\newpage
+% ---- PROJECTS -----------------------------------------------
+\section{Projects}
+
+\projentry{\href{https://github.com/SaidurRahman1004/pocketvault}{PocketVault --- Full-Stack Productivity App}}{Flutter \,\textbullet\, Django REST Framework \,\textbullet\, JWT \,\textbullet\, SQLite \,\textbullet\, Provider}
+\begin{itemize}
+  \item Built a multi-feature productivity application using Flutter and Django REST Framework with a structured full-stack architecture.
+  \item Developed REST APIs with JWT authentication, user-specific data handling, and Django ORM-based database operations.
+  \item Implemented offline-first local storage using SQLite and integrated the Flutter application with backend APIs for synchronized data workflows.
+  \item Applied Clean Architecture and Provider for maintainable code organization, state management, and scalable feature development.
+\end{itemize}
+
+\vspace{4pt}
+
+\projentry{\href{https://play.google.com/store/apps/details?id=com.ezydash\&hl=en}{EzyDash} --- \href{https://apps.apple.com/in/app/ezydash-student-marketplace/id6749002165}{Student Marketplace}}{Flutter \,\textbullet\, REST APIs \,\textbullet\, Firebase \,\textbullet\, Socket.IO \,\textbullet\, Production App}
+\begin{itemize}
+  \item Developed and maintained a production mobile application deployed on Google Play Store and Apple App Store, supporting student-focused marketplace services and community interactions.
+  \item Implemented 6+ marketplace categories (Accommodation, Events, Services, Jobs, Marketplace, Giveaways) with filtering, real-time search, and pagination.
+  \item Integrated REST APIs and Firebase services including Authentication, Cloud Messaging, Analytics, and Crashlytics for reliable functionality and monitoring.
+  \item Developed real-time user-to-user messaging using Socket.IO and social features including profiles, following, saved listings, and activity tracking.
+  \item Implemented payment and event features including Airtel Money and MTN Mobile Money integration, QR-based ticketing, promo codes, and Google Maps with location-based functionality.
+\end{itemize}
+
+\vspace{4pt}
+
+\projentry{ChugChain --- Social Video Sharing Platform}{Flutter \,\textbullet\, REST APIs \,\textbullet\, Firebase \,\textbullet\, Video Streaming \,\textbullet\, GetX}
+\begin{itemize}
+  \item Developing a TikTok-style social video sharing application with friend-based networking, interactive video feeds, and cross-platform mobile experiences.
+  \item Implemented an optimized video feed with controlled preloading, network streaming, auto-looping, lazy loading, and visibility-based performance optimization.
+  \item Built media workflows including camera capture, video compression, multipart uploads, thumbnail generation, and cached media delivery.
+  \item Developed social features including friend discovery, profiles, likes, reporting, sharing, and Firebase-powered push notifications, Analytics, and Crashlytics.
+  \item Implemented monetization features including in-app purchases, subscription management, and Google Mobile Ads with ad-free premium tiers.
+\end{itemize}
+
+\vspace{4pt}
+
+\projentry{\href{https://github.com/SaidurRahman1004/my_trips}{TravelSnap --- Social Travel Platform}}{Flutter \,\textbullet\, Firebase \,\textbullet\, GoRouter \,\textbullet\, GPS \& Maps}
+\begin{itemize}
+  \item Built a social travel platform for sharing public and private GPS-tagged trips, featuring a community feed with user engagement and real-time updates.
+  \item Implemented Firebase Authentication, Cloud Firestore with offline caching, FCM push notifications, and ImgBB REST API for image uploads.
+  \item Integrated Google Maps, Geolocator, and Geocoding for automatic address resolution, utilizing GoRouter for declarative navigation.
+\end{itemize}
+
+% ---- EDUCATION ----------------------------------------------
+\section{Education}
+
+\eduentry{\href{https://dhaka.polytech.gov.bd/}{Dhaka Polytechnic Institute}}{2022 -- 2026}{Diploma in Computer Engineering --- Computer Science \& Technology}{Dhaka, Bangladesh}
+
+\vspace{6pt}
+
+\eduentry{\href{http://aasac.edu.bd/}{Ali Ahmed School and College}}{2021}{Secondary School Certificate (SSC) --- Science}{Bangladesh}
+
+% ---- CERTIFICATIONS -----------------------------------------
+\section{Certifications \& Professional Development}
+
+\textbf{Flutter \& Dart App Development} --- \href{https://ostad.app/}{Ostad} \\
+\href{https://ostad.app/share/certificate/c43942-md-saidur-rahman-bhuyan}{Certificate}
+
+\vspace{5pt}
+
+\textbf{Web Development} --- \href{https://bohubrihi.com/}{Bohubrihi} \\
+\href{https://www.linkedin.com/in/saidur1004/overlay/Certifications/132641588/treasury/?profileId=ACoAAFvw44EBd0KjHnbL5Xfk4zXY-laSdkRnl2E}{Credential}
+
+\vspace{5pt}
+
+\textbf{Self-Learning \& Professional Development} \\
+Django, Django REST Framework, Python, Kotlin, JavaScript, AI API Integration
+
+% ---- LANGUAGES ----------------------------------------------
+\section{Languages}
+
+\vspace{2pt}
+{\small
+\textbf{Bengali:} Native
+\quad\textbullet\quad
+\textbf{English:} Intermediate
+}
+
+\end{document}
